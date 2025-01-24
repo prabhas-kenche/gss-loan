@@ -4,30 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy</title>
-  <link rel="stylesheet" href="privacy-policy.css">
+  <link rel="stylesheet" href="./privacy-policy.css">
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <div class="logo">
-                <img src="https://assets.onecompiler.app/42y68y97m/436j8dzsj/WhatsApp%20Image%202025-01-19%20at%2010.41.24%20PM.jpeg" alt="Tanavi Property Logo">
-            </div>
-            
+  <header>
+    <div class="logo-container">
+        <div class="logo">
+            <img src="https://assets.onecompiler.app/42y68y97m/436j8dzsj/WhatsApp%20Image%202025-01-19%20at%2010.41.24%20PM.jpeg" alt="Tanavi Property Logo">
         </div>
-        <nav class="desktop-nav">
-          <a href="./index.html">Home</a>
-          <a href="./contact.html">Contact Us</a>
-          <a href="./terms-and-conditions.html">Terms and Conditions</a>
-          <a href="./privacy-policy.html">Privacy Policy</a>
-        </nav>
-        <div class="menu-toggle">☰</div>
-        <nav class="mobile-nav">
-          <a href="./index.html">Home</a>
-          <a href="./contact.html">Contact Us</a>
-          <a href="./terms-and-conditions.html">Terms and Conditions</a>
-          <a href="./privacy-policy.html">Privacy Policy</a>
-        </nav>
-    </header>
+        
+    </div>
+    <nav class="desktop-nav">
+        <a href="./index.html">Home</a>
+        <a href="./contact.html">Contact Us</a>
+        <a href="./terms-and-conditions.html">Terms and Conditions</a>
+        <a href="./privacy-policy.html">Privacy Policy</a>
+    </nav>
+    <div class="menu-toggle">☰</div>
+    <nav class="mobile-nav">
+        <a href="./index.html">Home</a>
+        <a href="./contact.html">Contact Us</a>
+        <a href="./terms-and-conditions.html">Terms and Conditions</a>
+        <a href="./privacy-policy.html">Privacy Policy</a>
+    </nav>
+</header>
   <div class="privacy-policy">
     <h1>Privacy Policy</h1>
     <p>Your privacy is important to us. This document outlines how we collect, use, and protect your data.</p>
@@ -122,9 +122,26 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 Loan Website. All Rights Reserved.</p>
+        <p>&copy; 2025 GSS Loan. All Rights Reserved. <span>Powered By <a class="service-provider" href="https://www.vspazetechnologies.in/">VSpaze Technologies</a></span></p>
       </div>
     </div>
   </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+
+        // Toggle mobile navigation
+        menuToggle.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+        });
+
+        // Toggle dropdown menu
+        dropdownToggle.addEventListener('click', () => {
+            dropdownMenu.style.display = dropdownMenu.style.display === 'flex' ? 'none' : 'flex';
+        });
+  </script>
 </body>
 </html>
